@@ -38,12 +38,18 @@ body {
 	color: #000
 }
 
-.social-link img {
+.instagram-social-media img {
 	width: 20px;
+	height: 20px;
+}
+
+.img-carousel {
+	width: 100%;
+	height: 100%;
 }
 
 #about {
-	display: flex;
+	display: flex; 
 	background-color: #F6D2B8;
 	padding-inline: 100px;
 	padding-block: 100px;
@@ -67,8 +73,15 @@ body {
 	z-index: 0;
 }
 
+.picture.left {
+    width: 529px;
+    height: 528px;
+}
+
 .picture img {
 	width: 100%;
+	height: 100%;
+	object-fit: cover;
 
 }
 #about-me {
@@ -101,8 +114,8 @@ body {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
-	background-color: #BEB45A;
+	color: black;
+	background-color: #a39e00;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {

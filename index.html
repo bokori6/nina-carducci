@@ -1,11 +1,13 @@
 <!doctype html>
-<html>
+<html lang="fr">
   <head>
+    <title>Site de photographie Nina Carducci</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <meta charset="UTF-8" />
   </head>
+
   <style>
 /* Inter Regular */
 @font-face {
@@ -77,7 +79,7 @@ font-display: swap;
           <li><a href="#contact">Contact</a></li>
           <li>
             <a
-              class="social-link"
+              class="instagram-social-media" aria-label="Visit our Instagram page"
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
               ><img src="assets/images/instagram.png" alt=""
@@ -118,22 +120,22 @@ font-display: swap;
           <div class="carousel-item active">
             <img
               src="./assets/images-optimiser/ryoji-iwata-wUZjnOv7t0g-unsplash.avif"
-              class="d-block w-100"
-              alt="..."
+              class="img-carousel"
+              alt="Foule lors d'un concert avec un artiste sur scène"
             />
           </div>
           <div class="carousel-item">
             <img
               src="./assets/images-optimiser/nicholas-green-nPz8akkUmDI-unsplash.avif"
-              class="d-block w-100"
-              alt="..."
+              class="img-carousel"
+              alt="Personne marchant dans une rue urbaine avec un éclairage naturel"
             />
           </div>
           <div class="carousel-item">
             <img
               src="./assets/images-optimiser/edward-cisneros-3_h6-1NPDGw-unsplash.avif"
-              class="d-block w-100"
-              alt="..."
+              class="img-carousel"
+              alt="Couple se tenant la main lors d'un mariage"
             />
           </div>
         </div>
@@ -159,7 +161,8 @@ font-display: swap;
     </div>
     <div id="about">
       <div class="picture left">
-        <img src="./assets/images-optimiser/nina.avif" />
+        <img src="./assets/images-optimiser/nina.avif" alt="Portrait de la photographe NINA Carducci"/>
+        
       </div>
       <div id="about-me">
         <h3 class="about-me__title">A propos de moi</h3>
@@ -187,47 +190,47 @@ font-display: swap;
           <img
             data-gallery-tag="Concert"
             class="gallery-item"
-            src="./assets/images-optimiser/aaron-paul-wnX-fXzB6Cw-unsplash.avif"
+            src="./assets/images-optimiser/aaron-paul-wnX-fXzB6Cw-unsplash.avif" alt="Chanteur sur scène lors d'un concert"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
-            src="./assets/images-optimiser/ali-morshedlou-WMD64tMfc4k-unsplash.avif"
+            src="./assets/images-optimiser/ali-morshedlou-WMD64tMfc4k-unsplash.avif" alt="Protrait professionnel d'un homme en costume"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
-            src="./assets/images-optimiser/jason-goodman-tHO1_OuKbg0-unsplash.avif"
+            src="./assets/images-optimiser/jason-goodman-tHO1_OuKbg0-unsplash.avif" alt="Deux personne discutant dans un environnement professionnel"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
-            src="./assets/images-optimiser/hannah-busing-RvF2R_qMpRk-unsplash.avif"
+            src="./assets/images-optimiser/hannah-busing-RvF2R_qMpRk-unsplash.avif" alt="Mariage avec des invités serrant la main des invités"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
-            src="./assets/images-optimiser/ade-tunji-rVkhWWZFAtQ-unsplash.avif"
+            src="./assets/images-optimiser/ade-tunji-rVkhWWZFAtQ-unsplash.avif" alt="Portrait artistique d'un homme"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
-            src="./assets/images-optimiser/jakob-owens-SiniLJkXhMc-unsplash.avif"
+            src="./assets/images-optimiser/jakob-owens-SiniLJkXhMc-unsplash.avif" alt="Couple de mariés rigolant lors d'une cérémonie"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
-            src="./assets/images-optimiser/nino-van-prattenburg--443cl1uR_8-unsplash.avif"
+            src="./assets/images-optimiser/nino-van-prattenburg--443cl1uR_8-unsplash.avif" alt="Portrait artistique d'une femme portant des lunettes de vue"
           />
           <img
             data-gallery-tag="Concert"
             class="gallery-item"
-            src="./assets/images-optimiser/austin-neill-hgO1wFPXl3I-unsplash.avif"
+            src="./assets/images-optimiser/austin-neill-hgO1wFPXl3I-unsplash.avif" alt="Concert avec l'artiste sur scène"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
-            src="./assets/images-optimiser/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.avif"
+            src="./assets/images-optimiser/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.avif" alt="Une femme dans un bureau avec un ordinateur portable"
           />
         </div>
       </div>
@@ -310,11 +313,11 @@ font-display: swap;
             N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
           </p>
           <form action="" method="post">
-            <label>Nom</label>
+            <label for="nom">Nom</label>
             <input type="text" name="nom" id="nom" />
-            <label>Email</label>
+            <label for="email">Email</label>
             <input type="email" name="email" id="email" />
-            <label>Message</label>
+            <label for="message">Message</label>
             <textarea
               name="message"
               id="message"
@@ -325,7 +328,7 @@ font-display: swap;
           </form>
         </div>
         <div class="picture right">
-          <img src="./assets/images-optimiser/camera.avif" />
+          <img src="./assets/images-optimiser/camera.avif" alt="Appareil photo poser sur une table"/>
         </div>
       </div>
     </div>
