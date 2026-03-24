@@ -1,12 +1,31 @@
 <!doctype html>
 <html lang="fr">
   <head>
-    <title>Site de photographie Nina Carducci</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="./assets/style.css" />
-    <meta charset="UTF-8" />
-  </head>
+  <meta charset="UTF-8" />
+
+  <title>Photographe professionnelle à Paris – Nina Carducci | Mariage, portrait, entreprise</title>
+
+  <meta name="description" content="Photographe professionnelle à Paris, Nina Carducci capture vos mariages, portraits et événements d’entreprise. Réservez votre shooting photo." />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nina Carducci – Photographe professionnelle à Bordeaux" />
+  <meta property="og:description" content="Mariage, portrait, entreprise : des photos authentiques et professionnelles. Réservez votre shooting avec Nina Carducci." />
+  <meta property="og:url" content="https://www.ninacarducci.fr/" />
+  <meta property="og:image" content="https://www.ninacarducci.fr/assets/images/cover.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Nina Carducci – Photographe à Bordeaux" />
+  <meta name="twitter:description" content="Photographe spécialisée en mariage, portrait et entreprise à Paris." />
+  <meta name="twitter:image" content="https://www.ninacarducci.fr/assets/images/cover.jpg" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
 
   <style>
 /* Inter Regular */
@@ -119,7 +138,7 @@ font-display: swap;
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="./assets/images-optimiser/ryoji-iwata-wUZjnOv7t0g-unsplash.avif"
+              src="./assets/images-optimiser/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
               class="img-carousel"
               alt="Foule lors d'un concert avec un artiste sur scène"
             />
@@ -159,18 +178,20 @@ font-display: swap;
         </button>
       </div>
     </div>
+    <main>  
+    
     <div id="about">
       <div class="picture left">
         <img src="./assets/images-optimiser/nina.avif" alt="Portrait de la photographe NINA Carducci"/>
         
       </div>
       <div id="about-me">
-        <h3 class="about-me__title">A propos de moi</h3>
-        <h6 class="about-me__introduction">
+        <h3 class="about-me-title">A propos de moi</h3>
+        <h4 class="about-me-introduction">
           Devenir photographe était pour moi une évidence. Comme si j’y étais
           prédestiné. Saisir un moment, une émotion, une situation, un endroit,
           une lumière et les rendre immortels, voilà ce qui me fait vibrer.
-        </h6>
+        </h4>
         <p>
           Nous passons notre vie à chercher le bonheur, et lorsque nous y
           touchons, nous n’avons qu’une envie : le figer au travers de
@@ -185,6 +206,7 @@ font-display: swap;
     </div>
     <div id="gallery">
       <h3 class="title">Portfolio</h3>
+      
       <div class="container py-3">
         <div class="gallery" style="display: none">
           <img
@@ -234,25 +256,26 @@ font-display: swap;
           />
         </div>
       </div>
+     
       <div class="quote">
         <figure>
           <blockquote>
-            <h1 class="quote__text">
+            <h1 class="quote-text">
               Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
               qu’un fait est traduit en photo, il cesse d’être un fait pour
               devenir une opinion. L’inexactitude n’existe pas en photographie.
               Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
             </h1>
           </blockquote>
-          <figcaption class="quote__author">- Richard Avedon</figcaption>
+          <figcaption class="quote-author">- Richard Avedon</figcaption>
         </figure>
       </div>
     </div>
     <div id="services">
-      <h3 class="title">Mes services</h3>
+      <h2 class="title">Mes services</h2>
       <div class="container">
         <div class="service">
-          <div class="service__description">
+          <div class="service-description">
             <h3>Shooting photo</h3>
             <p>
               Pour capturer vos moments les plus précieux et garder un souvenir
@@ -260,33 +283,33 @@ font-display: swap;
               photos
             </p>
           </div>
-          <div class="service__price">
+          <div class="service-price">
             <h4>350€/demi journée</h4>
             <span>Matériel, déplacement inclus</span>
           </div>
         </div>
         <div class="service">
-          <div class="service__description">
+          <div class="service-description">
             <h3>Retouches</h3>
             <p>
               Vous souhaitez retoucher vos photos pour un résultat professionnel
               ? Bénéficier d’un rendu optimal pour vos publications
             </p>
           </div>
-          <div class="service__price">
+          <div class="service-price">
             <h4>50€/photo</h4>
             <span>2 AR par photo</span>
           </div>
         </div>
         <div class="service">
-          <div class="service__description">
+          <div class="service-description">
             <h3>Album photos</h3>
             <p>
               Partagez avec vos proches et vos clients les photos des moments
               partagés ensemble à travers un album photo personnalisé
             </p>
           </div>
-          <div class="service__price">
+          <div class="service-price">
             <h4>400€ album A4</h4>
             <span>30 pages recto/verso</span>
           </div>
@@ -296,19 +319,21 @@ font-display: swap;
     <div class="quote">
       <figure>
         <blockquote>
-          <h1 class="quote__text">
+          <h1 class="quote-text">
             De manière inconsciente, je crois, je guette un regard, une
             expression, des traits ou une nostalgie capable de résumer ou plus
             exactement de révéler une vie
           </h1>
         </blockquote>
-        <figcaption class="quote__author">- Richard Avedon</figcaption>
+        <figcaption class="quote-author">- Richard Avedon</figcaption>
       </figure>
     </div>
+     </main>
+    <footer>
     <div id="contact">
       <div class="container">
         <div class="form-container">
-          <h3>Une question ? Une demande de devis ?</h3>
+          <h2>Une question ? Une demande de devis ?</h2>
           <p>
             N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
           </p>
@@ -332,6 +357,7 @@ font-display: swap;
         </div>
       </div>
     </div>
+    </footer>
   </body>
   <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -342,13 +368,5 @@ font-display: swap;
   <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
   <script src="./assets/maugallery.js" defer></script>
   <script src="./assets/scripts.js" defer></script>
-  <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"
-    defer
-  ></script>
-  <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
-  <script src="./assets/maugallery.js" defer></script>
-  <script src="./assets/scripts.js" defer></script>
+ 
 </html>
